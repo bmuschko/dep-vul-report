@@ -7,5 +7,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.vertx:vertx-web-graphql:3.9.16'
+    implementation('io.vertx:vertx-web-graphql:3.9.16') {
+        exclude group: 'com.graphql-java', module: 'graphql-java'
+    }
 }
